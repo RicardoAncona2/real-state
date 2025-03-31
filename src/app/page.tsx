@@ -15,12 +15,9 @@ const Home: React.FC = () => {
         <Typography
           variant="h4"
           align="center"
-          gutterBottom
-          sx={{ color: "#fff" }}
-        >
-          Get accurate quotes instantly—quick, easy, and hassle-free!
-        </Typography>
-        <Image360Viewer tourUrl="https://rs1-swart.vercel.app/" />
+
+        >Explora la Vista Aérea de Nuestras Propiedades Exclusivas</Typography>
+        <Image360Viewer tourUrl="https://rs1-swart.vercel.app/" style={{ height: "80vh" }} />
         <LotMap />
       </Container>
 

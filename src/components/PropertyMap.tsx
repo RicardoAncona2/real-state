@@ -59,9 +59,11 @@ export default function PropertyMap() {
     )
   }
   return (
-    <PageContainer>
-      <Typography variant="h4" component="h2" gutterBottom align="center" sx={{ mb: 4 }} color="black">
-        Map of available lots
+    <PageContainer id="Cotiza">
+      <Typography variant="h4"
+        align="center">
+
+        Mapa de lotes disponibles
       </Typography>
 
       <MapContainer >
@@ -110,20 +112,21 @@ export default function PropertyMap() {
         </LegendContainer>
       </MapContainer>
 
-      {<Dialog open={!!selectedLot} onClose={handleCloseDialog} maxWidth="lg" fullWidth fullScreen={isMobile}>
+      {<Dialog open={!!selectedLot} onClose={handleCloseDialog} maxWidth="lg" fullWidth fullScreen={isMobile} >
         {selectedLot && (
           <>
-            <Grid container spacing={2} sx={{ mb: 4 }}>
-              <Grid size={{ xs: 12, md: 6 }}>
-                {<Image360Viewer tourUrl="https://storage.net-fs.com/hosting/2727323/454/" />}
+            <Grid container spacing={2} >
+              <Grid size={{ xs: 12, md: 6 }} height={"75vh"}>
+                {<Image360Viewer tourUrl="https://storage.net-fs.com/hosting/2727323/454/" style={{ height: "74vh", objectFit: "cover" }}
+                />}
               </Grid>
               <Grid size={{ xs: 12, md: 6 }} >
-              <DialogTitle>
-              {selectedLot.name}
-              <Typography variant="caption" display="block" color="text.secondary">
-                ID: {selectedLot.id}
-              </Typography>
-            </DialogTitle>
+                <DialogTitle>
+                  {selectedLot.name}
+                  <Typography variant="caption" display="block" color="text.secondary">
+                    ID: {selectedLot.id}
+                  </Typography>
+                </DialogTitle>
                 <DialogContent dividers>
                   <Box sx={{ mb: 2 }}>
                     <Typography variant="subtitle1" gutterBottom>
@@ -168,6 +171,7 @@ export default function PropertyMap() {
                   </List>
 
                 </DialogContent>
+
               </Grid>
 
             </Grid>

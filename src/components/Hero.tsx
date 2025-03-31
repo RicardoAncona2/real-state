@@ -25,7 +25,7 @@ const Hero = () => {
             fontFamily: "sans-serif",
           }}
         >
-          Empower Your Creativity
+          Potencia tu creatividad
         </Typography>
         <Typography
           variant="h5"
@@ -41,7 +41,8 @@ const Hero = () => {
             margin: "0 auto",
           }}
         >
-          Discover groundbreaking Real State solutions.
+
+          Descubre soluciones inmobiliarias innovadoras.
         </Typography>
         <Box sx={{ display: "flex", gap: 2, justifyContent: "center" }}>
           <Button
@@ -53,14 +54,14 @@ const Hero = () => {
             }}
             size="large"
           >
-            Quote
+            Cotizar
           </Button>
           <Button
             variant="outlined"
             sx={{ color: "#fff", borderColor: "#fff" }}
             size="large"
           >
-            Contact us
+            Contactanos
           </Button>
         </Box>
       </Box>

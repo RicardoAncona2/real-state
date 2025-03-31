@@ -7,7 +7,6 @@ const ImageMap = () => {
             src="/building.webp"
             alt="Mapa de lotes"
             fill
-
             style={{ objectFit: "cover" }}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
             priority

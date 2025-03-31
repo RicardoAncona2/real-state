@@ -1,4 +1,5 @@
-import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { AppBar, Toolbar, Typography } from "@mui/material";
+import { HeaderActionButtons } from "./HeaderActionButtons";
 
 const Header = () => {
   return (
@@ -8,7 +9,6 @@ const Header = () => {
         backgroundColor: "#000000",
         top: 0,
         width: "100%",
-        padding: "1rem",
         transition: "transform 0.3s ease-in-out",
       }}
     >
@@ -19,16 +19,10 @@ const Header = () => {
         >
           Company name
         </Typography>
-        <Box>
-          {["Home", "Quote", "Contact"].map((item) => (
-            <Button key={item} color="inherit" sx={{ "&:hover": { textDecoration: "underline" } }}>
-              {item}
-            </Button>
-          ))}
-        </Box>
+        <HeaderActionButtons />
       </Toolbar>
 
-      
+
     </AppBar>
   );
 };
